@@ -9,10 +9,6 @@ end
 function setFontSize(fontSize)
     love.graphics.setFont(love.graphics.newFont(fontSize))
 end
-
-function test(fontSize)
-    love.graphics.setFont(love.graphics.newFont(fontSize))
-end
   
 
 
