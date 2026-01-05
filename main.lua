@@ -9,6 +9,20 @@ end
 function setFontSize(fontSize)
     love.graphics.setFont(love.graphics.newFont(fontSize))
 end
+
+
+function testIf(condition)
+    message = "Im less than zero"
+    if condition > 0 then
+        message = "Im greater than 0"
+    end
+    love.graphics.print("The message is ".. message, 200, 00)
+
+end
+
+
+
+
   
 
 
@@ -19,8 +33,15 @@ function love.draw()
     myDraw("Aarav",true)
     setFontSize(89)
     love.graphics.print("end", 580,490)
-
+    setFontSize(50)
+    testIf(math.random(-1, 1))
 end
+
+
+
+
+
+
 
 
 
