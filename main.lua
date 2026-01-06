@@ -20,14 +20,23 @@ function testIf(condition)
 
 end
 
-
+function testElseif(testelseif_input,x,y)
+    if testelseif_input > 0 then
+        love.graphics.print("I am greater than 0!",x,y) 
+    elseif  testelseif_input < 0 then 
+        love.graphics.print("I am smaller than 0!",x,y) 
+    else 
+         love.graphics.print("I am equal to 0!",x,y) 
+    end 
+end
 
 
   
 
 
 function love.draw()
-    setFontSize(50)    
+    setFontSize(50)
+    testElseif(1,200,)
     love.graphics.print("Start")
     setFontSize(60) 
     myDraw("Aarav",true)
